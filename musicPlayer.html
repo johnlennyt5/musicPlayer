@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- The meta tag that specifies the character encoding and viewport settings -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width= device-width, intial-scale= 1.0">
+    
+        <!-- The title of the HTML file -->
+        <title>Music Player</title>
+    
+        <!-- The link tag that includes the CSS file -->
+        <link rel="stylesheet" href="player.css">
+    
+        <!-- The script tag that includes the Font Awesome kit -->
+        <script src="https://kit.fontawesome.com/a2baa188bb.js" crossorigin="anonymous"></script>
+        
+    </head>
+    
+    <body>
+        <!-- The opening tag of the container div -->
+        <div class="container">
+            <!-- The opening tag of the musicPlayer div -->
+            <div class="musicPlayer">
+                <!-- The opening tag of the nav div -->
+                <nav>
+                    <!-- The first circle div -->
+                    <div class="circle">
+                        <!-- The icon for the first circle div -->
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <!-- The second circle div -->
+                    <div class="circle">
+                        <!-- The icon for the second circle div -->
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav> <!-- The closing tag of the nav div -->
+    
+                <!-- The song-img image -->
+                <img src="media/tems.jpg" class="song-img">
+    
+                <!-- The h1 header for the song title -->
+                <h1>Free My Mind</h1>
+    
+                <!-- The p tag for the song artist -->
+                <p>Tems</p>
+    
+                <!-- The audio tag for the song, with the source tag pointing to the MP3 file -->
+                <audio  id="song">
+                    <source src="media/Tems - Free Mind (Lyrics).mp3" type="audio/mpeg">
+                </audio>
+    
+                <!-- The input range tag for the song progress -->
+                <input type="range" value="0" id="progress">
+    
+                <!-- The controls div for the player buttons -->
+                <div class="controls">
+                    <!-- The backward button div -->
+                    <div><i class="fa-solid fa-backward"></i></div>
+                    <!-- The play/pause button div, with an onclick event to call the playPause function -->
+                    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></i></div>
+                    <!-- The forward button div -->
+                    <div><i class="fa-solid fa-forward"></i></div>
+                </div> <!-- The closing tag of the controls div -->
+            </div> <!-- The closing tag of the musicPlayer div -->
+        </div> <!-- The closing tag of the container div -->
+    
+        <!-- The script tag that includes the JavaScript file -->
+        <script src="player.js"></script>
+    
+    </body> <!-- The closing tag of the body -->
+    
+    <!-- The closing tag of the HTML file -->
+    </head>
+    </html>
