@@ -37,3 +37,4 @@ song.currentTime = progress.value;
 ctrlIcon.classList.add("fa-pause");
 ctrlIcon.classList.remove("fa-play");
 }
+// add next song function next
