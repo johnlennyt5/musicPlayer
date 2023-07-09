@@ -1,0 +1,6 @@
+Images must have alternate text: Element has no title attribute
+
+Form elements must have labels: Element has no title attribute Element has no placeholder attribute
+
+The 'viewport' meta element 'content' attribute value should not contain unknown property 'intial-scale'.
+
